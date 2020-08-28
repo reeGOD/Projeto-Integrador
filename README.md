@@ -1,2 +1,2 @@
 # Projeto Integrador
- Projeto com Teishiro ,Gusstavo Tudela , Pedro , Joao , Matheus tudela
+ Projetto integrador com o Teishiro , Frussa , Matheus Tudela , Pedro , Joao
