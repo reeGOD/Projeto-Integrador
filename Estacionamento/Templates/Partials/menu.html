@@ -1,0 +1,18 @@
+{% load static %}
+<div class="barra">
+    <ul>
+    <li><a href="{% url 'index' %}">Home</a></li>
+
+    <li><a href="#news">News</a></li>
+
+    <li><a href="{% url 'CriarVaga' %}">Contact</a></li>
+
+    <li><a href="{% url 'garagem' %}">Garagem</a></li>
+
+    {% if user.is_authenticated %}
+    <li style="float:right"><a href="{% url 'logout' %}" title="Cchama!!!">{{ user.first_name }} &nbsp|&nbsp Logout</a></li>
+    {% else %}
+    <li style="float:right"><a href="{% url 'Login' %}">Login</a></li>
+    {% endif %}
+    </ul>
+</div>

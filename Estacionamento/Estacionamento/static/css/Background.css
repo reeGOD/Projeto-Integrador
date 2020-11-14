@@ -1,0 +1,23 @@
+.container-login100{
+    background: white url("/static/images/bg-01.jpg") no-repeat right bottom;
+
+}
+.page-wrapper{
+    background: white url("/static/images/bg-01.jpg") no-repeat right bottom;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .bg {
+  
+    background-image: url("/static/images/bg-01.jpg");
+  
+    height: 100%; 
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

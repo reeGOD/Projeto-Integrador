@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Garagem</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/Barra.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/Background.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/Quadrado.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/Table.css' %}">
+
+</head>
+
+<body>
+	<div class="bg">
+        <br/>
+		{% include 'Partials/menu.html' %}
+		<br/>
+	<div class="centered">	
+	<div id="mainWrapper" >
+	<section class="mainContent">
+		<div class="productRow">
+		{% for iten in itens %}
+		<center>
+		  <article class="productInfo">
+			<p>&nbsp;</p>
+			<div><p style="color: rgb(255, 255, 255);">Vaga {{ iten.id }}</p></div>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+		{% if iten.validacao == False %}
+		<a href="{% url 'comprarvaga' iten.id %}"><input type="button" name="button" value="Alugar" class="buyButton"></a>
+		{%else%}
+		<a href="#"><input type="button" name="button" value="Alugar" style="color: black;" class="buyButton" disabled></a>
+		{% endif %}
+		  </article>
+		</center>
+		{% endfor %}
+		</div>
+		
+	  </section>
+	</div>
+	</div>
+	</body>
+
+</html>
