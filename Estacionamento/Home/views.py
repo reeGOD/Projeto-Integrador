@@ -4,3 +4,9 @@ from django.shortcuts import render, redirect
 
 def index(request):
     return render(request,'index.html')
+
+def Sobre(request):
+    return render(request,'Sobre.html')
+
+def Contato(request):
+    return render(request,'Contato.html')

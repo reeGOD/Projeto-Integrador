@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/Barra.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/Background.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/Box.css' %}">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="bg">
+        <br/>
+        {% include 'Partials/menu.html' %}
+        <br/>
+        <div class="abs">
+            <div class="box">
+              <p>
+                    <b>
+                    <center>
+                        Informações de contato:
+                    </center>
+                    </b>
+                    <br/>
+                        Telefone: (014) xxxx-xxxx<br/>
+                        Celular: (014) xxxxx-xxxx<br/>
+                        Instagram: eparkinglot_univem<br/>
+                        Facebook: Eparkinglot Projeto Univem<br/>
+                        Twiter: Eparkinglot_univem<br/>
+                        E-mail: projeto_eparkinglot@univem.edu.br<br/>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

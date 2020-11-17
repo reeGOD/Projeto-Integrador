@@ -1,0 +1,19 @@
+.abs {
+    top: 280px;
+    position:absolute;
+    width: 100%;
+    text-align: center;
+}
+.box {
+    min-width:600px;
+    min-height:80px;
+    background:#ffffff;
+    border:1px solid grey;
+    padding:20px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    -webkit-box-shadow:#333 5px 5px 2px;
+    width: 220px;
+    margin: auto;
+    text-align: left;
+}

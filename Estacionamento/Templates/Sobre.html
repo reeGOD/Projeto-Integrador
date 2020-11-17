@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/Barra.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/Background.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/Box.css' %}">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="bg">
+        <br/>
+        {% include 'Partials/menu.html' %}
+        <br/>
+        <div class="abs">
+            <div class="box">
+              <p>
+                    <b>
+                    <center>
+                    Sobre nós
+                    </center>
+                    </b>
+                    <br/>
+                    Somos um grupo de estudantes do curso de Bacharelado em Ciência da Computação do
+                    Centro Eurípedes de Ensino.<br/> O projeto começou como uma proposta inicial de uma aula no quarto
+                    semestre da faculdade, que tinha como objetivo reunir o conhecimento obtido em outras disciplinas
+                    e aplicá-lo.<br/> Com o tempo, os professores foram exigindo seu refinamento e desenvolvimento.<br/> O
+                    projeto foi crescendo e foi tomando forma: a cada semana eram feitas e atualizadas informações,
+                    idéias, documentações, possíveis designes, perfis de clientes e diagramas.<br/> Durante as aulas,
+                    aprendemos muito sobre cada um desses itens e principalmente sobre a importância de atender ao
+                    que nos foi pedido (pelo cliente), e também sobre como melhorar a qualidade do nosso produto e
+                    sobre a importância da colaboração e interação em grupo.<br/>
+                    Durante o desenvolvimento do projeto, o maior desafio que encontramos foi o nosso
+                    trabalho em grupo: como conciliar os horários escassos de cada integrante?<br/> Como fazer uma divisão
+                    justa de trabalhos considerando a disponibilidade de cada um? Como continuar o projeto mesmo
+                    quando a grande maioria está cansada e desanimada?<br/> Como elevar a moral da equipe?<br/> A cada
+                    entrega, fomos crescendo e aprendendo a lidar com alguma dessas dificuldades.<br/>
+                    Após várias aulas, dificuldades, aprendizados, muito esforço e trabalho em equipe,
+                    apresentamos aqui o resultado de toda a nossa trajetória.<br/>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
